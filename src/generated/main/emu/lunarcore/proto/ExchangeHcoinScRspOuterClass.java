@@ -19,12 +19,12 @@ public final class ExchangeHcoinScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 3;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 4;</code>
      */
     private int num;
 
@@ -39,7 +39,7 @@ public final class ExchangeHcoinScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +47,7 @@ public final class ExchangeHcoinScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @return this
      */
     public ExchangeHcoinScRsp clearRetcode() {
@@ -57,7 +57,7 @@ public final class ExchangeHcoinScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +65,7 @@ public final class ExchangeHcoinScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 6;</code>
+     * <code>optional uint32 retcode = 3;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class ExchangeHcoinScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 4;</code>
      * @return whether the num field is set
      */
     public boolean hasNum() {
@@ -84,7 +84,7 @@ public final class ExchangeHcoinScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 4;</code>
      * @return this
      */
     public ExchangeHcoinScRsp clearNum() {
@@ -94,7 +94,7 @@ public final class ExchangeHcoinScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 4;</code>
      * @return the num
      */
     public int getNum() {
@@ -102,7 +102,7 @@ public final class ExchangeHcoinScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 11;</code>
+     * <code>optional uint32 num = 4;</code>
      * @param value the num to set
      * @return this
      */
@@ -177,11 +177,11 @@ public final class ExchangeHcoinScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(num);
       }
     }
@@ -205,16 +205,16 @@ public final class ExchangeHcoinScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 24: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 32) {
               break;
             }
           }
-          case 88: {
+          case 32: {
             // num
             num = input.readUInt32();
             bitField0_ |= 0x00000002;

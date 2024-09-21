@@ -24,7 +24,7 @@ public final class MaterialOuterClass {
     private int tid;
 
     /**
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 10;</code>
      */
     private int num;
 
@@ -76,7 +76,7 @@ public final class MaterialOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 10;</code>
      * @return whether the num field is set
      */
     public boolean hasNum() {
@@ -84,7 +84,7 @@ public final class MaterialOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 10;</code>
      * @return this
      */
     public Material clearNum() {
@@ -94,7 +94,7 @@ public final class MaterialOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 10;</code>
      * @return the num
      */
     public int getNum() {
@@ -102,7 +102,7 @@ public final class MaterialOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 10;</code>
      * @param value the num to set
      * @return this
      */
@@ -181,7 +181,7 @@ public final class MaterialOuterClass {
         output.writeUInt32NoTag(tid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(num);
       }
     }
@@ -210,11 +210,11 @@ public final class MaterialOuterClass {
             tid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 80) {
               break;
             }
           }
-          case 64: {
+          case 80: {
             // num
             num = input.readUInt32();
             bitField0_ |= 0x00000002;

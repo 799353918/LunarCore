@@ -19,12 +19,12 @@ public final class DestroyItemCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 1;</code>
      */
     private int itemCount;
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 4;</code>
      */
     private int itemId;
 
@@ -44,7 +44,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 1;</code>
      * @return whether the itemCount field is set
      */
     public boolean hasItemCount() {
@@ -52,7 +52,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 1;</code>
      * @return this
      */
     public DestroyItemCsReq clearItemCount() {
@@ -62,7 +62,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 1;</code>
      * @return the itemCount
      */
     public int getItemCount() {
@@ -70,7 +70,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_count = 2;</code>
+     * <code>optional uint32 item_count = 1;</code>
      * @param value the itemCount to set
      * @return this
      */
@@ -81,7 +81,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 4;</code>
      * @return whether the itemId field is set
      */
     public boolean hasItemId() {
@@ -89,7 +89,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 4;</code>
      * @return this
      */
     public DestroyItemCsReq clearItemId() {
@@ -99,7 +99,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 4;</code>
      * @return the itemId
      */
     public int getItemId() {
@@ -107,7 +107,7 @@ public final class DestroyItemCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 item_id = 11;</code>
+     * <code>optional uint32 item_id = 4;</code>
      * @param value the itemId to set
      * @return this
      */
@@ -225,11 +225,11 @@ public final class DestroyItemCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(itemCount);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(itemId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -260,16 +260,16 @@ public final class DestroyItemCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 8: {
             // itemCount
             itemCount = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 32) {
               break;
             }
           }
-          case 88: {
+          case 32: {
             // itemId
             itemId = input.readUInt32();
             bitField0_ |= 0x00000002;

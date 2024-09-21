@@ -20,12 +20,12 @@ public final class UnlockSkilltreeCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 point_id = 6;</code>
+     * <code>optional uint32 point_id = 10;</code>
      */
     private int pointId;
 
     /**
-     * <code>optional uint32 level = 11;</code>
+     * <code>optional uint32 level = 13;</code>
      */
     private int level;
 
@@ -45,7 +45,7 @@ public final class UnlockSkilltreeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 point_id = 6;</code>
+     * <code>optional uint32 point_id = 10;</code>
      * @return whether the pointId field is set
      */
     public boolean hasPointId() {
@@ -53,7 +53,7 @@ public final class UnlockSkilltreeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 point_id = 6;</code>
+     * <code>optional uint32 point_id = 10;</code>
      * @return this
      */
     public UnlockSkilltreeCsReq clearPointId() {
@@ -63,7 +63,7 @@ public final class UnlockSkilltreeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 point_id = 6;</code>
+     * <code>optional uint32 point_id = 10;</code>
      * @return the pointId
      */
     public int getPointId() {
@@ -71,7 +71,7 @@ public final class UnlockSkilltreeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 point_id = 6;</code>
+     * <code>optional uint32 point_id = 10;</code>
      * @param value the pointId to set
      * @return this
      */
@@ -82,7 +82,7 @@ public final class UnlockSkilltreeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 11;</code>
+     * <code>optional uint32 level = 13;</code>
      * @return whether the level field is set
      */
     public boolean hasLevel() {
@@ -90,7 +90,7 @@ public final class UnlockSkilltreeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 11;</code>
+     * <code>optional uint32 level = 13;</code>
      * @return this
      */
     public UnlockSkilltreeCsReq clearLevel() {
@@ -100,7 +100,7 @@ public final class UnlockSkilltreeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 11;</code>
+     * <code>optional uint32 level = 13;</code>
      * @return the level
      */
     public int getLevel() {
@@ -108,7 +108,7 @@ public final class UnlockSkilltreeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 11;</code>
+     * <code>optional uint32 level = 13;</code>
      * @param value the level to set
      * @return this
      */
@@ -258,11 +258,11 @@ public final class UnlockSkilltreeCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(pointId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(level);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -295,16 +295,16 @@ public final class UnlockSkilltreeCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 80: {
             // pointId
             pointId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 104) {
               break;
             }
           }
-          case 88: {
+          case 104: {
             // level
             level = input.readUInt32();
             bitField0_ |= 0x00000002;

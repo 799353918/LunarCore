@@ -19,22 +19,22 @@ public final class SceneEntityMoveScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 entity_id = 3;</code>
-     */
-    private int entityId;
-
-    /**
-     * <code>optional uint32 client_pos_version = 5;</code>
-     */
-    private int clientPosVersion;
-
-    /**
-     * <code>optional uint32 entry_id = 14;</code>
+     * <code>optional uint32 entry_id = 7;</code>
      */
     private int entryId;
 
     /**
-     * <code>optional .MotionInfo motion = 4;</code>
+     * <code>optional uint32 client_pos_version = 9;</code>
+     */
+    private int clientPosVersion;
+
+    /**
+     * <code>optional uint32 entity_id = 10;</code>
+     */
+    private int entityId;
+
+    /**
+     * <code>optional .MotionInfo motion = 15;</code>
      */
     private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
 
@@ -49,44 +49,44 @@ public final class SceneEntityMoveScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 entity_id = 3;</code>
-     * @return whether the entityId field is set
+     * <code>optional uint32 entry_id = 7;</code>
+     * @return whether the entryId field is set
      */
-    public boolean hasEntityId() {
+    public boolean hasEntryId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 entity_id = 3;</code>
+     * <code>optional uint32 entry_id = 7;</code>
      * @return this
      */
-    public SceneEntityMoveScNotify clearEntityId() {
+    public SceneEntityMoveScNotify clearEntryId() {
       bitField0_ &= ~0x00000001;
-      entityId = 0;
+      entryId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 entity_id = 3;</code>
-     * @return the entityId
+     * <code>optional uint32 entry_id = 7;</code>
+     * @return the entryId
      */
-    public int getEntityId() {
-      return entityId;
+    public int getEntryId() {
+      return entryId;
     }
 
     /**
-     * <code>optional uint32 entity_id = 3;</code>
-     * @param value the entityId to set
+     * <code>optional uint32 entry_id = 7;</code>
+     * @param value the entryId to set
      * @return this
      */
-    public SceneEntityMoveScNotify setEntityId(final int value) {
+    public SceneEntityMoveScNotify setEntryId(final int value) {
       bitField0_ |= 0x00000001;
-      entityId = value;
+      entryId = value;
       return this;
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 5;</code>
+     * <code>optional uint32 client_pos_version = 9;</code>
      * @return whether the clientPosVersion field is set
      */
     public boolean hasClientPosVersion() {
@@ -94,7 +94,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 5;</code>
+     * <code>optional uint32 client_pos_version = 9;</code>
      * @return this
      */
     public SceneEntityMoveScNotify clearClientPosVersion() {
@@ -104,7 +104,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 5;</code>
+     * <code>optional uint32 client_pos_version = 9;</code>
      * @return the clientPosVersion
      */
     public int getClientPosVersion() {
@@ -112,7 +112,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_pos_version = 5;</code>
+     * <code>optional uint32 client_pos_version = 9;</code>
      * @param value the clientPosVersion to set
      * @return this
      */
@@ -123,44 +123,44 @@ public final class SceneEntityMoveScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 14;</code>
-     * @return whether the entryId field is set
+     * <code>optional uint32 entity_id = 10;</code>
+     * @return whether the entityId field is set
      */
-    public boolean hasEntryId() {
+    public boolean hasEntityId() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional uint32 entry_id = 14;</code>
+     * <code>optional uint32 entity_id = 10;</code>
      * @return this
      */
-    public SceneEntityMoveScNotify clearEntryId() {
+    public SceneEntityMoveScNotify clearEntityId() {
       bitField0_ &= ~0x00000004;
-      entryId = 0;
+      entityId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 entry_id = 14;</code>
-     * @return the entryId
+     * <code>optional uint32 entity_id = 10;</code>
+     * @return the entityId
      */
-    public int getEntryId() {
-      return entryId;
+    public int getEntityId() {
+      return entityId;
     }
 
     /**
-     * <code>optional uint32 entry_id = 14;</code>
-     * @param value the entryId to set
+     * <code>optional uint32 entity_id = 10;</code>
+     * @param value the entityId to set
      * @return this
      */
-    public SceneEntityMoveScNotify setEntryId(final int value) {
+    public SceneEntityMoveScNotify setEntityId(final int value) {
       bitField0_ |= 0x00000004;
-      entryId = value;
+      entityId = value;
       return this;
     }
 
     /**
-     * <code>optional .MotionInfo motion = 4;</code>
+     * <code>optional .MotionInfo motion = 15;</code>
      * @return whether the motion field is set
      */
     public boolean hasMotion() {
@@ -168,7 +168,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 4;</code>
+     * <code>optional .MotionInfo motion = 15;</code>
      * @return this
      */
     public SceneEntityMoveScNotify clearMotion() {
@@ -178,7 +178,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 4;</code>
+     * <code>optional .MotionInfo motion = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -192,7 +192,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 4;</code>
+     * <code>optional .MotionInfo motion = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -206,7 +206,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 4;</code>
+     * <code>optional .MotionInfo motion = 15;</code>
      * @param value the motion to set
      * @return this
      */
@@ -221,9 +221,9 @@ public final class SceneEntityMoveScNotifyOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        entityId = other.entityId;
-        clientPosVersion = other.clientPosVersion;
         entryId = other.entryId;
+        clientPosVersion = other.clientPosVersion;
+        entityId = other.entityId;
         motion.copyFrom(other.motion);
       }
       return this;
@@ -235,14 +235,14 @@ public final class SceneEntityMoveScNotifyOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasEntityId()) {
-        setEntityId(other.entityId);
+      if (other.hasEntryId()) {
+        setEntryId(other.entryId);
       }
       if (other.hasClientPosVersion()) {
         setClientPosVersion(other.clientPosVersion);
       }
-      if (other.hasEntryId()) {
-        setEntryId(other.entryId);
+      if (other.hasEntityId()) {
+        setEntityId(other.entityId);
       }
       if (other.hasMotion()) {
         getMutableMotion().mergeFrom(other.motion);
@@ -257,9 +257,9 @@ public final class SceneEntityMoveScNotifyOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      entityId = 0;
-      clientPosVersion = 0;
       entryId = 0;
+      clientPosVersion = 0;
+      entityId = 0;
       motion.clear();
       return this;
     }
@@ -285,28 +285,28 @@ public final class SceneEntityMoveScNotifyOuterClass {
       }
       SceneEntityMoveScNotify other = (SceneEntityMoveScNotify) o;
       return bitField0_ == other.bitField0_
-        && (!hasEntityId() || entityId == other.entityId)
-        && (!hasClientPosVersion() || clientPosVersion == other.clientPosVersion)
         && (!hasEntryId() || entryId == other.entryId)
+        && (!hasClientPosVersion() || clientPosVersion == other.clientPosVersion)
+        && (!hasEntityId() || entityId == other.entityId)
         && (!hasMotion() || motion.equals(other.motion));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(entityId);
+        output.writeRawByte((byte) 56);
+        output.writeUInt32NoTag(entryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(clientPosVersion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(entryId);
+        output.writeRawByte((byte) 80);
+        output.writeUInt32NoTag(entityId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 34);
+        output.writeRawByte((byte) 122);
         output.writeMessageNoTag(motion);
       }
     }
@@ -315,13 +315,13 @@ public final class SceneEntityMoveScNotifyOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(entityId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(entryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(clientPosVersion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(entryId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(entityId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(motion);
@@ -336,34 +336,34 @@ public final class SceneEntityMoveScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 24: {
-            // entityId
-            entityId = input.readUInt32();
+          case 56: {
+            // entryId
+            entryId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 72) {
               break;
             }
           }
-          case 40: {
+          case 72: {
             // clientPosVersion
             clientPosVersion = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 80) {
               break;
             }
           }
-          case 112: {
-            // entryId
-            entryId = input.readUInt32();
+          case 80: {
+            // entityId
+            entityId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 122) {
               break;
             }
           }
-          case 34: {
+          case 122: {
             // motion
             input.readMessage(motion);
             bitField0_ |= 0x00000008;
@@ -390,13 +390,13 @@ public final class SceneEntityMoveScNotifyOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.entityId, entityId);
+        output.writeUInt32(FieldNames.entryId, entryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeUInt32(FieldNames.clientPosVersion, clientPosVersion);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.entryId, entryId);
+        output.writeUInt32(FieldNames.entityId, entityId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeMessage(FieldNames.motion, motion);
@@ -411,11 +411,11 @@ public final class SceneEntityMoveScNotifyOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -2102099874:
-          case -740565257: {
-            if (input.isAtField(FieldNames.entityId)) {
+          case -1591558867:
+          case -2093663224: {
+            if (input.isAtField(FieldNames.entryId)) {
               if (!input.trySkipNullValue()) {
-                entityId = input.readUInt32();
+                entryId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -435,11 +435,11 @@ public final class SceneEntityMoveScNotifyOuterClass {
             }
             break;
           }
-          case -1591558867:
-          case -2093663224: {
-            if (input.isAtField(FieldNames.entryId)) {
+          case -2102099874:
+          case -740565257: {
+            if (input.isAtField(FieldNames.entityId)) {
               if (!input.trySkipNullValue()) {
-                entryId = input.readUInt32();
+                entityId = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -511,11 +511,11 @@ public final class SceneEntityMoveScNotifyOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName entityId = FieldName.forField("entityId", "entity_id");
+      static final FieldName entryId = FieldName.forField("entryId", "entry_id");
 
       static final FieldName clientPosVersion = FieldName.forField("clientPosVersion", "client_pos_version");
 
-      static final FieldName entryId = FieldName.forField("entryId", "entry_id");
+      static final FieldName entityId = FieldName.forField("entityId", "entity_id");
 
       static final FieldName motion = FieldName.forField("motion");
     }

@@ -19,12 +19,12 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 server_prefs_id = 6;</code>
+     * <code>optional uint32 server_prefs_id = 5;</code>
      */
     private int serverPrefsId;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 14;</code>
      */
     private int retcode;
 
@@ -39,7 +39,7 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 server_prefs_id = 6;</code>
+     * <code>optional uint32 server_prefs_id = 5;</code>
      * @return whether the serverPrefsId field is set
      */
     public boolean hasServerPrefsId() {
@@ -47,7 +47,7 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 server_prefs_id = 6;</code>
+     * <code>optional uint32 server_prefs_id = 5;</code>
      * @return this
      */
     public UpdateServerPrefsDataScRsp clearServerPrefsId() {
@@ -57,7 +57,7 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 server_prefs_id = 6;</code>
+     * <code>optional uint32 server_prefs_id = 5;</code>
      * @return the serverPrefsId
      */
     public int getServerPrefsId() {
@@ -65,7 +65,7 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 server_prefs_id = 6;</code>
+     * <code>optional uint32 server_prefs_id = 5;</code>
      * @param value the serverPrefsId to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -84,7 +84,7 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return this
      */
     public UpdateServerPrefsDataScRsp clearRetcode() {
@@ -94,7 +94,7 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -102,7 +102,7 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 14;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -177,11 +177,11 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(serverPrefsId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(retcode);
       }
     }
@@ -205,16 +205,16 @@ public final class UpdateServerPrefsDataScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 40: {
             // serverPrefsId
             serverPrefsId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 112) {
               break;
             }
           }
-          case 64: {
+          case 112: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;

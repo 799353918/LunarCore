@@ -23,14 +23,14 @@ public final class RogueVirtualItemDataOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 num = 13;</code>
+     * <code>optional uint32 num = 2;</code>
      */
     private int num;
 
     /**
-     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
+     * <code>optional uint32 display_type = 6;</code>
      */
-    private int mDBPDPDDHBC;
+    private int displayType;
 
     private RogueVirtualItemData() {
     }
@@ -47,7 +47,7 @@ public final class RogueVirtualItemDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 13;</code>
+     * <code>optional uint32 num = 2;</code>
      * @return whether the num field is set
      */
     public boolean hasNum() {
@@ -55,7 +55,7 @@ public final class RogueVirtualItemDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 13;</code>
+     * <code>optional uint32 num = 2;</code>
      * @return this
      */
     public RogueVirtualItemData clearNum() {
@@ -65,7 +65,7 @@ public final class RogueVirtualItemDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 13;</code>
+     * <code>optional uint32 num = 2;</code>
      * @return the num
      */
     public int getNum() {
@@ -73,7 +73,7 @@ public final class RogueVirtualItemDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 num = 13;</code>
+     * <code>optional uint32 num = 2;</code>
      * @param value the num to set
      * @return this
      */
@@ -84,39 +84,39 @@ public final class RogueVirtualItemDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
-     * @return whether the mDBPDPDDHBC field is set
+     * <code>optional uint32 display_type = 6;</code>
+     * @return whether the displayType field is set
      */
-    public boolean hasMDBPDPDDHBC() {
+    public boolean hasDisplayType() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
+     * <code>optional uint32 display_type = 6;</code>
      * @return this
      */
-    public RogueVirtualItemData clearMDBPDPDDHBC() {
+    public RogueVirtualItemData clearDisplayType() {
       bitField0_ &= ~0x00000002;
-      mDBPDPDDHBC = 0;
+      displayType = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
-     * @return the mDBPDPDDHBC
+     * <code>optional uint32 display_type = 6;</code>
+     * @return the displayType
      */
-    public int getMDBPDPDDHBC() {
-      return mDBPDPDDHBC;
+    public int getDisplayType() {
+      return displayType;
     }
 
     /**
-     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
-     * @param value the mDBPDPDDHBC to set
+     * <code>optional uint32 display_type = 6;</code>
+     * @param value the displayType to set
      * @return this
      */
-    public RogueVirtualItemData setMDBPDPDDHBC(final int value) {
+    public RogueVirtualItemData setDisplayType(final int value) {
       bitField0_ |= 0x00000002;
-      mDBPDPDDHBC = value;
+      displayType = value;
       return this;
     }
 
@@ -126,7 +126,7 @@ public final class RogueVirtualItemDataOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         num = other.num;
-        mDBPDPDDHBC = other.mDBPDPDDHBC;
+        displayType = other.displayType;
       }
       return this;
     }
@@ -140,8 +140,8 @@ public final class RogueVirtualItemDataOuterClass {
       if (other.hasNum()) {
         setNum(other.num);
       }
-      if (other.hasMDBPDPDDHBC()) {
-        setMDBPDPDDHBC(other.mDBPDPDDHBC);
+      if (other.hasDisplayType()) {
+        setDisplayType(other.displayType);
       }
       return this;
     }
@@ -154,7 +154,7 @@ public final class RogueVirtualItemDataOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       num = 0;
-      mDBPDPDDHBC = 0;
+      displayType = 0;
       return this;
     }
 
@@ -179,18 +179,18 @@ public final class RogueVirtualItemDataOuterClass {
       RogueVirtualItemData other = (RogueVirtualItemData) o;
       return bitField0_ == other.bitField0_
         && (!hasNum() || num == other.num)
-        && (!hasMDBPDPDDHBC() || mDBPDPDDHBC == other.mDBPDPDDHBC);
+        && (!hasDisplayType() || displayType == other.displayType);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(num);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(mDBPDPDDHBC);
+        output.writeRawByte((byte) 48);
+        output.writeUInt32NoTag(displayType);
       }
     }
 
@@ -201,7 +201,7 @@ public final class RogueVirtualItemDataOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(num);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(mDBPDPDDHBC);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(displayType);
       }
       return size;
     }
@@ -213,18 +213,18 @@ public final class RogueVirtualItemDataOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 16: {
             // num
             num = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 48) {
               break;
             }
           }
-          case 112: {
-            // mDBPDPDDHBC
-            mDBPDPDDHBC = input.readUInt32();
+          case 48: {
+            // displayType
+            displayType = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -252,7 +252,7 @@ public final class RogueVirtualItemDataOuterClass {
         output.writeUInt32(FieldNames.num, num);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.mDBPDPDDHBC, mDBPDPDDHBC);
+        output.writeUInt32(FieldNames.displayType, displayType);
       }
       output.endObject();
     }
@@ -275,10 +275,11 @@ public final class RogueVirtualItemDataOuterClass {
             }
             break;
           }
-          case -170385096: {
-            if (input.isAtField(FieldNames.mDBPDPDDHBC)) {
+          case 1714350876:
+          case 1615288471: {
+            if (input.isAtField(FieldNames.displayType)) {
               if (!input.trySkipNullValue()) {
-                mDBPDPDDHBC = input.readUInt32();
+                displayType = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -341,7 +342,7 @@ public final class RogueVirtualItemDataOuterClass {
     static class FieldNames {
       static final FieldName num = FieldName.forField("num");
 
-      static final FieldName mDBPDPDDHBC = FieldName.forField("MDBPDPDDHBC");
+      static final FieldName displayType = FieldName.forField("displayType", "display_type");
     }
   }
 }

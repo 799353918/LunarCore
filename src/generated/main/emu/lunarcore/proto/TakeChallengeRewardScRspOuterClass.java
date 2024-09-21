@@ -25,7 +25,7 @@ public final class TakeChallengeRewardScRspOuterClass {
     private int groupId;
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 11;</code>
      */
     private int retcode;
 
@@ -82,7 +82,7 @@ public final class TakeChallengeRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -90,7 +90,7 @@ public final class TakeChallengeRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return this
      */
     public TakeChallengeRewardScRsp clearRetcode() {
@@ -100,7 +100,7 @@ public final class TakeChallengeRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -108,7 +108,7 @@ public final class TakeChallengeRewardScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 13;</code>
+     * <code>optional uint32 retcode = 11;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -266,7 +266,7 @@ public final class TakeChallengeRewardScRspOuterClass {
         output.writeUInt32NoTag(groupId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -304,11 +304,11 @@ public final class TakeChallengeRewardScRspOuterClass {
             groupId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 104) {
+            if (tag != 88) {
               break;
             }
           }
-          case 104: {
+          case 88: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000002;

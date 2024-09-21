@@ -30,7 +30,7 @@ public class GameData {
     @Getter private static Int2ObjectMap<StageExcel> stageExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<MazePlaneExcel> mazePlaneExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<MapEntranceExcel> mapEntranceExcelMap = new Int2ObjectOpenHashMap<>();
-    @Getter private static Int2ObjectMap<HeroExcel> heroExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<MultiplePathAvatarExcel> multiplePathAvatarExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<ShopExcel> shopExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<RewardExcel> rewardExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<InteractExcel> interactExcelMap = new Int2ObjectOpenHashMap<>();
@@ -42,6 +42,7 @@ public class GameData {
     @Getter private static Int2ObjectMap<TextJoinExcel> textJoinExcelMap = new Int2ObjectLinkedOpenHashMap<>();
     @Getter private static Int2ObjectMap<ChatBubbleExcel> chatBubbleExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<PhoneThemeExcel> phoneThemeExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<PetExcel> petExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<ContentPackageExcel> contentPackageExcelMap = new Int2ObjectOpenHashMap<>();
 
     @Getter private static Int2ObjectMap<ChallengeGroupExcel> challengeGroupExcelMap = new Int2ObjectOpenHashMap<>();
@@ -55,6 +56,7 @@ public class GameData {
     @Getter private static Int2ObjectMap<RogueRoomExcel> rogueRoomExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<RogueMapExcel> rogueMapExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<RogueMonsterExcel> rogueMonsterExcelMap = new Int2ObjectOpenHashMap<>();
+    @Getter private static Int2ObjectMap<RogueNPCExcel> rogueNPCExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<DialogueEventExcel> rogueDialogueEventList = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<RogueBuffGroupExcel> rogueBuffGroupExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<RogueBuffExcel> rogueBuffTagExcelMap = new Int2ObjectOpenHashMap<>();

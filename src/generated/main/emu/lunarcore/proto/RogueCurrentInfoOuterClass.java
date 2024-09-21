@@ -19,7 +19,11 @@ public final class RogueCurrentInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .RogueStatus status = 13;</code>
+     * <pre>
+     *  PAOGLFPDNOA JGHAOFCGEMP = 3;
+     * </pre>
+     *
+     * <code>optional .RogueStatus status = 7;</code>
      */
     private int status;
 
@@ -29,34 +33,38 @@ public final class RogueCurrentInfoOuterClass {
     private final RogueCommonPendingActionOuterClass.RogueCommonPendingAction pendingAction = RogueCommonPendingActionOuterClass.RogueCommonPendingAction.newInstance();
 
     /**
-     * <code>optional .RogueMapInfo room_map = 4;</code>
-     */
-    private final RogueMapInfoOuterClass.RogueMapInfo roomMap = RogueMapInfoOuterClass.RogueMapInfo.newInstance();
-
-    /**
-     * <code>optional .RogueBuffInfo rogue_buff_info = 5;</code>
-     */
-    private final RogueBuffInfoOuterClass.RogueBuffInfo rogueBuffInfo = RogueBuffInfoOuterClass.RogueBuffInfo.newInstance();
-
-    /**
-     * <code>optional .RogueMiracleInfo rogue_miracle_info = 8;</code>
-     */
-    private final RogueMiracleInfoOuterClass.RogueMiracleInfo rogueMiracleInfo = RogueMiracleInfoOuterClass.RogueMiracleInfo.newInstance();
-
-    /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 10;</code>
+     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 6;</code>
      */
     private final RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo rogueVirtualItem = RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo.newInstance();
 
     /**
-     * <code>optional .RogueAvatarInfo rogue_avatar_info = 11;</code>
+     * <code>optional .RogueAvatarInfo rogue_avatar_info = 8;</code>
      */
     private final RogueAvatarInfoOuterClass.RogueAvatarInfo rogueAvatarInfo = RogueAvatarInfoOuterClass.RogueAvatarInfo.newInstance();
 
     /**
-     * <code>optional .RogueAeon rogue_aeon_info = 15;</code>
+     * <code>optional .RogueMiracleInfo rogue_miracle_info = 9;</code>
+     */
+    private final RogueMiracleInfoOuterClass.RogueMiracleInfo rogueMiracleInfo = RogueMiracleInfoOuterClass.RogueMiracleInfo.newInstance();
+
+    /**
+     * <code>optional .RogueAeon rogue_aeon_info = 10;</code>
      */
     private final RogueAeonOuterClass.RogueAeon rogueAeonInfo = RogueAeonOuterClass.RogueAeon.newInstance();
+
+    /**
+     * <pre>
+     *  bool GPOIMNADJOH = 5;
+     * </pre>
+     *
+     * <code>optional .RogueMapInfo room_map = 13;</code>
+     */
+    private final RogueMapInfoOuterClass.RogueMapInfo roomMap = RogueMapInfoOuterClass.RogueMapInfo.newInstance();
+
+    /**
+     * <code>optional .RogueBuffInfo rogue_buff_info = 15;</code>
+     */
+    private final RogueBuffInfoOuterClass.RogueBuffInfo rogueBuffInfo = RogueBuffInfoOuterClass.RogueBuffInfo.newInstance();
 
     private RogueCurrentInfo() {
     }
@@ -69,7 +77,11 @@ public final class RogueCurrentInfoOuterClass {
     }
 
     /**
-     * <code>optional .RogueStatus status = 13;</code>
+     * <pre>
+     *  PAOGLFPDNOA JGHAOFCGEMP = 3;
+     * </pre>
+     *
+     * <code>optional .RogueStatus status = 7;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
@@ -77,7 +89,11 @@ public final class RogueCurrentInfoOuterClass {
     }
 
     /**
-     * <code>optional .RogueStatus status = 13;</code>
+     * <pre>
+     *  PAOGLFPDNOA JGHAOFCGEMP = 3;
+     * </pre>
+     *
+     * <code>optional .RogueStatus status = 7;</code>
      * @return this
      */
     public RogueCurrentInfo clearStatus() {
@@ -87,7 +103,11 @@ public final class RogueCurrentInfoOuterClass {
     }
 
     /**
-     * <code>optional .RogueStatus status = 13;</code>
+     * <pre>
+     *  PAOGLFPDNOA JGHAOFCGEMP = 3;
+     * </pre>
+     *
+     * <code>optional .RogueStatus status = 7;</code>
      * @return the status
      */
     public RogueStatusOuterClass.RogueStatus getStatus() {
@@ -120,7 +140,11 @@ public final class RogueCurrentInfoOuterClass {
     }
 
     /**
-     * <code>optional .RogueStatus status = 13;</code>
+     * <pre>
+     *  PAOGLFPDNOA JGHAOFCGEMP = 3;
+     * </pre>
+     *
+     * <code>optional .RogueStatus status = 7;</code>
      * @param value the status to set
      * @return this
      */
@@ -189,197 +213,25 @@ public final class RogueCurrentInfoOuterClass {
     }
 
     /**
-     * <code>optional .RogueMapInfo room_map = 4;</code>
-     * @return whether the roomMap field is set
+     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 6;</code>
+     * @return whether the rogueVirtualItem field is set
      */
-    public boolean hasRoomMap() {
+    public boolean hasRogueVirtualItem() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
-     * <code>optional .RogueMapInfo room_map = 4;</code>
-     * @return this
-     */
-    public RogueCurrentInfo clearRoomMap() {
-      bitField0_ &= ~0x00000004;
-      roomMap.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional .RogueMapInfo room_map = 4;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableRoomMap()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RogueMapInfoOuterClass.RogueMapInfo getRoomMap() {
-      return roomMap;
-    }
-
-    /**
-     * <code>optional .RogueMapInfo room_map = 4;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RogueMapInfoOuterClass.RogueMapInfo getMutableRoomMap() {
-      bitField0_ |= 0x00000004;
-      return roomMap;
-    }
-
-    /**
-     * <code>optional .RogueMapInfo room_map = 4;</code>
-     * @param value the roomMap to set
-     * @return this
-     */
-    public RogueCurrentInfo setRoomMap(final RogueMapInfoOuterClass.RogueMapInfo value) {
-      bitField0_ |= 0x00000004;
-      roomMap.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional .RogueBuffInfo rogue_buff_info = 5;</code>
-     * @return whether the rogueBuffInfo field is set
-     */
-    public boolean hasRogueBuffInfo() {
-      return (bitField0_ & 0x00000008) != 0;
-    }
-
-    /**
-     * <code>optional .RogueBuffInfo rogue_buff_info = 5;</code>
-     * @return this
-     */
-    public RogueCurrentInfo clearRogueBuffInfo() {
-      bitField0_ &= ~0x00000008;
-      rogueBuffInfo.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional .RogueBuffInfo rogue_buff_info = 5;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableRogueBuffInfo()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RogueBuffInfoOuterClass.RogueBuffInfo getRogueBuffInfo() {
-      return rogueBuffInfo;
-    }
-
-    /**
-     * <code>optional .RogueBuffInfo rogue_buff_info = 5;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RogueBuffInfoOuterClass.RogueBuffInfo getMutableRogueBuffInfo() {
-      bitField0_ |= 0x00000008;
-      return rogueBuffInfo;
-    }
-
-    /**
-     * <code>optional .RogueBuffInfo rogue_buff_info = 5;</code>
-     * @param value the rogueBuffInfo to set
-     * @return this
-     */
-    public RogueCurrentInfo setRogueBuffInfo(final RogueBuffInfoOuterClass.RogueBuffInfo value) {
-      bitField0_ |= 0x00000008;
-      rogueBuffInfo.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional .RogueMiracleInfo rogue_miracle_info = 8;</code>
-     * @return whether the rogueMiracleInfo field is set
-     */
-    public boolean hasRogueMiracleInfo() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>optional .RogueMiracleInfo rogue_miracle_info = 8;</code>
-     * @return this
-     */
-    public RogueCurrentInfo clearRogueMiracleInfo() {
-      bitField0_ &= ~0x00000010;
-      rogueMiracleInfo.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional .RogueMiracleInfo rogue_miracle_info = 8;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableRogueMiracleInfo()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RogueMiracleInfoOuterClass.RogueMiracleInfo getRogueMiracleInfo() {
-      return rogueMiracleInfo;
-    }
-
-    /**
-     * <code>optional .RogueMiracleInfo rogue_miracle_info = 8;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RogueMiracleInfoOuterClass.RogueMiracleInfo getMutableRogueMiracleInfo() {
-      bitField0_ |= 0x00000010;
-      return rogueMiracleInfo;
-    }
-
-    /**
-     * <code>optional .RogueMiracleInfo rogue_miracle_info = 8;</code>
-     * @param value the rogueMiracleInfo to set
-     * @return this
-     */
-    public RogueCurrentInfo setRogueMiracleInfo(
-        final RogueMiracleInfoOuterClass.RogueMiracleInfo value) {
-      bitField0_ |= 0x00000010;
-      rogueMiracleInfo.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 10;</code>
-     * @return whether the rogueVirtualItem field is set
-     */
-    public boolean hasRogueVirtualItem() {
-      return (bitField0_ & 0x00000020) != 0;
-    }
-
-    /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 10;</code>
+     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 6;</code>
      * @return this
      */
     public RogueCurrentInfo clearRogueVirtualItem() {
-      bitField0_ &= ~0x00000020;
+      bitField0_ &= ~0x00000004;
       rogueVirtualItem.clear();
       return this;
     }
 
     /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 10;</code>
+     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -393,7 +245,7 @@ public final class RogueCurrentInfoOuterClass {
     }
 
     /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 10;</code>
+     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -402,42 +254,42 @@ public final class RogueCurrentInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo getMutableRogueVirtualItem() {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000004;
       return rogueVirtualItem;
     }
 
     /**
-     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 10;</code>
+     * <code>optional .RogueVirtualItemInfo rogue_virtual_item = 6;</code>
      * @param value the rogueVirtualItem to set
      * @return this
      */
     public RogueCurrentInfo setRogueVirtualItem(
         final RogueVirtualItemInfoOuterClass.RogueVirtualItemInfo value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000004;
       rogueVirtualItem.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional .RogueAvatarInfo rogue_avatar_info = 11;</code>
+     * <code>optional .RogueAvatarInfo rogue_avatar_info = 8;</code>
      * @return whether the rogueAvatarInfo field is set
      */
     public boolean hasRogueAvatarInfo() {
-      return (bitField0_ & 0x00000040) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional .RogueAvatarInfo rogue_avatar_info = 11;</code>
+     * <code>optional .RogueAvatarInfo rogue_avatar_info = 8;</code>
      * @return this
      */
     public RogueCurrentInfo clearRogueAvatarInfo() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000008;
       rogueAvatarInfo.clear();
       return this;
     }
 
     /**
-     * <code>optional .RogueAvatarInfo rogue_avatar_info = 11;</code>
+     * <code>optional .RogueAvatarInfo rogue_avatar_info = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -451,7 +303,7 @@ public final class RogueCurrentInfoOuterClass {
     }
 
     /**
-     * <code>optional .RogueAvatarInfo rogue_avatar_info = 11;</code>
+     * <code>optional .RogueAvatarInfo rogue_avatar_info = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -460,42 +312,100 @@ public final class RogueCurrentInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RogueAvatarInfoOuterClass.RogueAvatarInfo getMutableRogueAvatarInfo() {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000008;
       return rogueAvatarInfo;
     }
 
     /**
-     * <code>optional .RogueAvatarInfo rogue_avatar_info = 11;</code>
+     * <code>optional .RogueAvatarInfo rogue_avatar_info = 8;</code>
      * @param value the rogueAvatarInfo to set
      * @return this
      */
     public RogueCurrentInfo setRogueAvatarInfo(
         final RogueAvatarInfoOuterClass.RogueAvatarInfo value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000008;
       rogueAvatarInfo.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional .RogueAeon rogue_aeon_info = 15;</code>
-     * @return whether the rogueAeonInfo field is set
+     * <code>optional .RogueMiracleInfo rogue_miracle_info = 9;</code>
+     * @return whether the rogueMiracleInfo field is set
      */
-    public boolean hasRogueAeonInfo() {
-      return (bitField0_ & 0x00000080) != 0;
+    public boolean hasRogueMiracleInfo() {
+      return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
-     * <code>optional .RogueAeon rogue_aeon_info = 15;</code>
+     * <code>optional .RogueMiracleInfo rogue_miracle_info = 9;</code>
+     * @return this
+     */
+    public RogueCurrentInfo clearRogueMiracleInfo() {
+      bitField0_ &= ~0x00000010;
+      rogueMiracleInfo.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .RogueMiracleInfo rogue_miracle_info = 9;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableRogueMiracleInfo()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RogueMiracleInfoOuterClass.RogueMiracleInfo getRogueMiracleInfo() {
+      return rogueMiracleInfo;
+    }
+
+    /**
+     * <code>optional .RogueMiracleInfo rogue_miracle_info = 9;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RogueMiracleInfoOuterClass.RogueMiracleInfo getMutableRogueMiracleInfo() {
+      bitField0_ |= 0x00000010;
+      return rogueMiracleInfo;
+    }
+
+    /**
+     * <code>optional .RogueMiracleInfo rogue_miracle_info = 9;</code>
+     * @param value the rogueMiracleInfo to set
+     * @return this
+     */
+    public RogueCurrentInfo setRogueMiracleInfo(
+        final RogueMiracleInfoOuterClass.RogueMiracleInfo value) {
+      bitField0_ |= 0x00000010;
+      rogueMiracleInfo.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .RogueAeon rogue_aeon_info = 10;</code>
+     * @return whether the rogueAeonInfo field is set
+     */
+    public boolean hasRogueAeonInfo() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>optional .RogueAeon rogue_aeon_info = 10;</code>
      * @return this
      */
     public RogueCurrentInfo clearRogueAeonInfo() {
-      bitField0_ &= ~0x00000080;
+      bitField0_ &= ~0x00000020;
       rogueAeonInfo.clear();
       return this;
     }
 
     /**
-     * <code>optional .RogueAeon rogue_aeon_info = 15;</code>
+     * <code>optional .RogueAeon rogue_aeon_info = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -509,7 +419,7 @@ public final class RogueCurrentInfoOuterClass {
     }
 
     /**
-     * <code>optional .RogueAeon rogue_aeon_info = 15;</code>
+     * <code>optional .RogueAeon rogue_aeon_info = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -518,18 +428,152 @@ public final class RogueCurrentInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RogueAeonOuterClass.RogueAeon getMutableRogueAeonInfo() {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000020;
       return rogueAeonInfo;
     }
 
     /**
-     * <code>optional .RogueAeon rogue_aeon_info = 15;</code>
+     * <code>optional .RogueAeon rogue_aeon_info = 10;</code>
      * @param value the rogueAeonInfo to set
      * @return this
      */
     public RogueCurrentInfo setRogueAeonInfo(final RogueAeonOuterClass.RogueAeon value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000020;
       rogueAeonInfo.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  bool GPOIMNADJOH = 5;
+     * </pre>
+     *
+     * <code>optional .RogueMapInfo room_map = 13;</code>
+     * @return whether the roomMap field is set
+     */
+    public boolean hasRoomMap() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <pre>
+     *  bool GPOIMNADJOH = 5;
+     * </pre>
+     *
+     * <code>optional .RogueMapInfo room_map = 13;</code>
+     * @return this
+     */
+    public RogueCurrentInfo clearRoomMap() {
+      bitField0_ &= ~0x00000040;
+      roomMap.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  bool GPOIMNADJOH = 5;
+     * </pre>
+     *
+     * <code>optional .RogueMapInfo room_map = 13;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableRoomMap()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RogueMapInfoOuterClass.RogueMapInfo getRoomMap() {
+      return roomMap;
+    }
+
+    /**
+     * <pre>
+     *  bool GPOIMNADJOH = 5;
+     * </pre>
+     *
+     * <code>optional .RogueMapInfo room_map = 13;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RogueMapInfoOuterClass.RogueMapInfo getMutableRoomMap() {
+      bitField0_ |= 0x00000040;
+      return roomMap;
+    }
+
+    /**
+     * <pre>
+     *  bool GPOIMNADJOH = 5;
+     * </pre>
+     *
+     * <code>optional .RogueMapInfo room_map = 13;</code>
+     * @param value the roomMap to set
+     * @return this
+     */
+    public RogueCurrentInfo setRoomMap(final RogueMapInfoOuterClass.RogueMapInfo value) {
+      bitField0_ |= 0x00000040;
+      roomMap.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .RogueBuffInfo rogue_buff_info = 15;</code>
+     * @return whether the rogueBuffInfo field is set
+     */
+    public boolean hasRogueBuffInfo() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <code>optional .RogueBuffInfo rogue_buff_info = 15;</code>
+     * @return this
+     */
+    public RogueCurrentInfo clearRogueBuffInfo() {
+      bitField0_ &= ~0x00000080;
+      rogueBuffInfo.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .RogueBuffInfo rogue_buff_info = 15;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableRogueBuffInfo()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RogueBuffInfoOuterClass.RogueBuffInfo getRogueBuffInfo() {
+      return rogueBuffInfo;
+    }
+
+    /**
+     * <code>optional .RogueBuffInfo rogue_buff_info = 15;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RogueBuffInfoOuterClass.RogueBuffInfo getMutableRogueBuffInfo() {
+      bitField0_ |= 0x00000080;
+      return rogueBuffInfo;
+    }
+
+    /**
+     * <code>optional .RogueBuffInfo rogue_buff_info = 15;</code>
+     * @param value the rogueBuffInfo to set
+     * @return this
+     */
+    public RogueCurrentInfo setRogueBuffInfo(final RogueBuffInfoOuterClass.RogueBuffInfo value) {
+      bitField0_ |= 0x00000080;
+      rogueBuffInfo.copyFrom(value);
       return this;
     }
 
@@ -540,12 +584,12 @@ public final class RogueCurrentInfoOuterClass {
         bitField0_ = other.bitField0_;
         status = other.status;
         pendingAction.copyFrom(other.pendingAction);
-        roomMap.copyFrom(other.roomMap);
-        rogueBuffInfo.copyFrom(other.rogueBuffInfo);
-        rogueMiracleInfo.copyFrom(other.rogueMiracleInfo);
         rogueVirtualItem.copyFrom(other.rogueVirtualItem);
         rogueAvatarInfo.copyFrom(other.rogueAvatarInfo);
+        rogueMiracleInfo.copyFrom(other.rogueMiracleInfo);
         rogueAeonInfo.copyFrom(other.rogueAeonInfo);
+        roomMap.copyFrom(other.roomMap);
+        rogueBuffInfo.copyFrom(other.rogueBuffInfo);
       }
       return this;
     }
@@ -562,23 +606,23 @@ public final class RogueCurrentInfoOuterClass {
       if (other.hasPendingAction()) {
         getMutablePendingAction().mergeFrom(other.pendingAction);
       }
-      if (other.hasRoomMap()) {
-        getMutableRoomMap().mergeFrom(other.roomMap);
-      }
-      if (other.hasRogueBuffInfo()) {
-        getMutableRogueBuffInfo().mergeFrom(other.rogueBuffInfo);
-      }
-      if (other.hasRogueMiracleInfo()) {
-        getMutableRogueMiracleInfo().mergeFrom(other.rogueMiracleInfo);
-      }
       if (other.hasRogueVirtualItem()) {
         getMutableRogueVirtualItem().mergeFrom(other.rogueVirtualItem);
       }
       if (other.hasRogueAvatarInfo()) {
         getMutableRogueAvatarInfo().mergeFrom(other.rogueAvatarInfo);
       }
+      if (other.hasRogueMiracleInfo()) {
+        getMutableRogueMiracleInfo().mergeFrom(other.rogueMiracleInfo);
+      }
       if (other.hasRogueAeonInfo()) {
         getMutableRogueAeonInfo().mergeFrom(other.rogueAeonInfo);
+      }
+      if (other.hasRoomMap()) {
+        getMutableRoomMap().mergeFrom(other.roomMap);
+      }
+      if (other.hasRogueBuffInfo()) {
+        getMutableRogueBuffInfo().mergeFrom(other.rogueBuffInfo);
       }
       return this;
     }
@@ -592,12 +636,12 @@ public final class RogueCurrentInfoOuterClass {
       bitField0_ = 0;
       status = 0;
       pendingAction.clear();
-      roomMap.clear();
-      rogueBuffInfo.clear();
-      rogueMiracleInfo.clear();
       rogueVirtualItem.clear();
       rogueAvatarInfo.clear();
+      rogueMiracleInfo.clear();
       rogueAeonInfo.clear();
+      roomMap.clear();
+      rogueBuffInfo.clear();
       return this;
     }
 
@@ -609,12 +653,12 @@ public final class RogueCurrentInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       pendingAction.clearQuick();
-      roomMap.clearQuick();
-      rogueBuffInfo.clearQuick();
-      rogueMiracleInfo.clearQuick();
       rogueVirtualItem.clearQuick();
       rogueAvatarInfo.clearQuick();
+      rogueMiracleInfo.clearQuick();
       rogueAeonInfo.clearQuick();
+      roomMap.clearQuick();
+      rogueBuffInfo.clearQuick();
       return this;
     }
 
@@ -630,18 +674,18 @@ public final class RogueCurrentInfoOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasStatus() || status == other.status)
         && (!hasPendingAction() || pendingAction.equals(other.pendingAction))
-        && (!hasRoomMap() || roomMap.equals(other.roomMap))
-        && (!hasRogueBuffInfo() || rogueBuffInfo.equals(other.rogueBuffInfo))
-        && (!hasRogueMiracleInfo() || rogueMiracleInfo.equals(other.rogueMiracleInfo))
         && (!hasRogueVirtualItem() || rogueVirtualItem.equals(other.rogueVirtualItem))
         && (!hasRogueAvatarInfo() || rogueAvatarInfo.equals(other.rogueAvatarInfo))
-        && (!hasRogueAeonInfo() || rogueAeonInfo.equals(other.rogueAeonInfo));
+        && (!hasRogueMiracleInfo() || rogueMiracleInfo.equals(other.rogueMiracleInfo))
+        && (!hasRogueAeonInfo() || rogueAeonInfo.equals(other.rogueAeonInfo))
+        && (!hasRoomMap() || roomMap.equals(other.roomMap))
+        && (!hasRogueBuffInfo() || rogueBuffInfo.equals(other.rogueBuffInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 104);
+        output.writeRawByte((byte) 56);
         output.writeEnumNoTag(status);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -649,28 +693,28 @@ public final class RogueCurrentInfoOuterClass {
         output.writeMessageNoTag(pendingAction);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 34);
-        output.writeMessageNoTag(roomMap);
+        output.writeRawByte((byte) 50);
+        output.writeMessageNoTag(rogueVirtualItem);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 42);
-        output.writeMessageNoTag(rogueBuffInfo);
+        output.writeRawByte((byte) 66);
+        output.writeMessageNoTag(rogueAvatarInfo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 66);
+        output.writeRawByte((byte) 74);
         output.writeMessageNoTag(rogueMiracleInfo);
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 82);
-        output.writeMessageNoTag(rogueVirtualItem);
+        output.writeMessageNoTag(rogueAeonInfo);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 90);
-        output.writeMessageNoTag(rogueAvatarInfo);
+        output.writeRawByte((byte) 106);
+        output.writeMessageNoTag(roomMap);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeRawByte((byte) 122);
-        output.writeMessageNoTag(rogueAeonInfo);
+        output.writeMessageNoTag(rogueBuffInfo);
       }
     }
 
@@ -684,22 +728,22 @@ public final class RogueCurrentInfoOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(pendingAction);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(roomMap);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueVirtualItem);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueBuffInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueAvatarInfo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(rogueMiracleInfo);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueVirtualItem);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueAeonInfo);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueAvatarInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(roomMap);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueAeonInfo);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(rogueBuffInfo);
       }
       return size;
     }
@@ -711,7 +755,7 @@ public final class RogueCurrentInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 104: {
+          case 56: {
             // status
             final int value = input.readInt32();
             if (RogueStatusOuterClass.RogueStatus.forNumber(value) != null) {
@@ -728,29 +772,29 @@ public final class RogueCurrentInfoOuterClass {
             input.readMessage(pendingAction);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 34) {
+            if (tag != 50) {
               break;
             }
           }
-          case 34: {
-            // roomMap
-            input.readMessage(roomMap);
+          case 50: {
+            // rogueVirtualItem
+            input.readMessage(rogueVirtualItem);
             bitField0_ |= 0x00000004;
-            tag = input.readTag();
-            if (tag != 42) {
-              break;
-            }
-          }
-          case 42: {
-            // rogueBuffInfo
-            input.readMessage(rogueBuffInfo);
-            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 66) {
               break;
             }
           }
           case 66: {
+            // rogueAvatarInfo
+            input.readMessage(rogueAvatarInfo);
+            bitField0_ |= 0x00000008;
+            tag = input.readTag();
+            if (tag != 74) {
+              break;
+            }
+          }
+          case 74: {
             // rogueMiracleInfo
             input.readMessage(rogueMiracleInfo);
             bitField0_ |= 0x00000010;
@@ -760,17 +804,17 @@ public final class RogueCurrentInfoOuterClass {
             }
           }
           case 82: {
-            // rogueVirtualItem
-            input.readMessage(rogueVirtualItem);
+            // rogueAeonInfo
+            input.readMessage(rogueAeonInfo);
             bitField0_ |= 0x00000020;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 106) {
               break;
             }
           }
-          case 90: {
-            // rogueAvatarInfo
-            input.readMessage(rogueAvatarInfo);
+          case 106: {
+            // roomMap
+            input.readMessage(roomMap);
             bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 122) {
@@ -778,8 +822,8 @@ public final class RogueCurrentInfoOuterClass {
             }
           }
           case 122: {
-            // rogueAeonInfo
-            input.readMessage(rogueAeonInfo);
+            // rogueBuffInfo
+            input.readMessage(rogueBuffInfo);
             bitField0_ |= 0x00000080;
             tag = input.readTag();
             if (tag != 0) {
@@ -810,22 +854,22 @@ public final class RogueCurrentInfoOuterClass {
         output.writeMessage(FieldNames.pendingAction, pendingAction);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeMessage(FieldNames.roomMap, roomMap);
+        output.writeMessage(FieldNames.rogueVirtualItem, rogueVirtualItem);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeMessage(FieldNames.rogueBuffInfo, rogueBuffInfo);
+        output.writeMessage(FieldNames.rogueAvatarInfo, rogueAvatarInfo);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeMessage(FieldNames.rogueMiracleInfo, rogueMiracleInfo);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeMessage(FieldNames.rogueVirtualItem, rogueVirtualItem);
+        output.writeMessage(FieldNames.rogueAeonInfo, rogueAeonInfo);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeMessage(FieldNames.rogueAvatarInfo, rogueAvatarInfo);
+        output.writeMessage(FieldNames.roomMap, roomMap);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeMessage(FieldNames.rogueAeonInfo, rogueAeonInfo);
+        output.writeMessage(FieldNames.rogueBuffInfo, rogueBuffInfo);
       }
       output.endObject();
     }
@@ -865,11 +909,11 @@ public final class RogueCurrentInfoOuterClass {
             }
             break;
           }
-          case 1379875457:
-          case -172986376: {
-            if (input.isAtField(FieldNames.roomMap)) {
+          case 2090167940:
+          case -856063476: {
+            if (input.isAtField(FieldNames.rogueVirtualItem)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(roomMap);
+                input.readMessage(rogueVirtualItem);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -877,11 +921,11 @@ public final class RogueCurrentInfoOuterClass {
             }
             break;
           }
-          case 1107898267:
-          case -694847243: {
-            if (input.isAtField(FieldNames.rogueBuffInfo)) {
+          case -1966631135:
+          case 667955439: {
+            if (input.isAtField(FieldNames.rogueAvatarInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(rogueBuffInfo);
+                input.readMessage(rogueAvatarInfo);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -901,11 +945,11 @@ public final class RogueCurrentInfoOuterClass {
             }
             break;
           }
-          case 2090167940:
-          case -856063476: {
-            if (input.isAtField(FieldNames.rogueVirtualItem)) {
+          case -1685018549:
+          case -1375922619: {
+            if (input.isAtField(FieldNames.rogueAeonInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(rogueVirtualItem);
+                input.readMessage(rogueAeonInfo);
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -913,11 +957,11 @@ public final class RogueCurrentInfoOuterClass {
             }
             break;
           }
-          case -1966631135:
-          case 667955439: {
-            if (input.isAtField(FieldNames.rogueAvatarInfo)) {
+          case 1379875457:
+          case -172986376: {
+            if (input.isAtField(FieldNames.roomMap)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(rogueAvatarInfo);
+                input.readMessage(roomMap);
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -925,11 +969,11 @@ public final class RogueCurrentInfoOuterClass {
             }
             break;
           }
-          case -1685018549:
-          case -1375922619: {
-            if (input.isAtField(FieldNames.rogueAeonInfo)) {
+          case 1107898267:
+          case -694847243: {
+            if (input.isAtField(FieldNames.rogueBuffInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(rogueAeonInfo);
+                input.readMessage(rogueBuffInfo);
                 bitField0_ |= 0x00000080;
               }
             } else {
@@ -994,17 +1038,17 @@ public final class RogueCurrentInfoOuterClass {
 
       static final FieldName pendingAction = FieldName.forField("pendingAction", "pending_action");
 
-      static final FieldName roomMap = FieldName.forField("roomMap", "room_map");
-
-      static final FieldName rogueBuffInfo = FieldName.forField("rogueBuffInfo", "rogue_buff_info");
-
-      static final FieldName rogueMiracleInfo = FieldName.forField("rogueMiracleInfo", "rogue_miracle_info");
-
       static final FieldName rogueVirtualItem = FieldName.forField("rogueVirtualItem", "rogue_virtual_item");
 
       static final FieldName rogueAvatarInfo = FieldName.forField("rogueAvatarInfo", "rogue_avatar_info");
 
+      static final FieldName rogueMiracleInfo = FieldName.forField("rogueMiracleInfo", "rogue_miracle_info");
+
       static final FieldName rogueAeonInfo = FieldName.forField("rogueAeonInfo", "rogue_aeon_info");
+
+      static final FieldName roomMap = FieldName.forField("roomMap", "room_map");
+
+      static final FieldName rogueBuffInfo = FieldName.forField("rogueBuffInfo", "rogue_buff_info");
     }
   }
 }

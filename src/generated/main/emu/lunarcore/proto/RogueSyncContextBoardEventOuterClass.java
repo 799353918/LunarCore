@@ -19,12 +19,12 @@ public final class RogueSyncContextBoardEventOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 board_event_id = 4;</code>
+     * <code>optional uint32 board_event_id = 7;</code>
      */
     private int boardEventId;
 
     /**
-     * <code>optional uint32 modifier_effect_type = 6;</code>
+     * <code>optional uint32 modifier_effect_type = 9;</code>
      */
     private int modifierEffectType;
 
@@ -39,7 +39,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 board_event_id = 4;</code>
+     * <code>optional uint32 board_event_id = 7;</code>
      * @return whether the boardEventId field is set
      */
     public boolean hasBoardEventId() {
@@ -47,7 +47,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 board_event_id = 4;</code>
+     * <code>optional uint32 board_event_id = 7;</code>
      * @return this
      */
     public RogueSyncContextBoardEvent clearBoardEventId() {
@@ -57,7 +57,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 board_event_id = 4;</code>
+     * <code>optional uint32 board_event_id = 7;</code>
      * @return the boardEventId
      */
     public int getBoardEventId() {
@@ -65,7 +65,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 board_event_id = 4;</code>
+     * <code>optional uint32 board_event_id = 7;</code>
      * @param value the boardEventId to set
      * @return this
      */
@@ -76,7 +76,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 modifier_effect_type = 6;</code>
+     * <code>optional uint32 modifier_effect_type = 9;</code>
      * @return whether the modifierEffectType field is set
      */
     public boolean hasModifierEffectType() {
@@ -84,7 +84,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 modifier_effect_type = 6;</code>
+     * <code>optional uint32 modifier_effect_type = 9;</code>
      * @return this
      */
     public RogueSyncContextBoardEvent clearModifierEffectType() {
@@ -94,7 +94,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 modifier_effect_type = 6;</code>
+     * <code>optional uint32 modifier_effect_type = 9;</code>
      * @return the modifierEffectType
      */
     public int getModifierEffectType() {
@@ -102,7 +102,7 @@ public final class RogueSyncContextBoardEventOuterClass {
     }
 
     /**
-     * <code>optional uint32 modifier_effect_type = 6;</code>
+     * <code>optional uint32 modifier_effect_type = 9;</code>
      * @param value the modifierEffectType to set
      * @return this
      */
@@ -177,11 +177,11 @@ public final class RogueSyncContextBoardEventOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(boardEventId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(modifierEffectType);
       }
     }
@@ -205,16 +205,16 @@ public final class RogueSyncContextBoardEventOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 56: {
             // boardEventId
             boardEventId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 72) {
               break;
             }
           }
-          case 48: {
+          case 72: {
             // modifierEffectType
             modifierEffectType = input.readUInt32();
             bitField0_ |= 0x00000002;

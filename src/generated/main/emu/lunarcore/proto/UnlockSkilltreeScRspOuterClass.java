@@ -19,21 +19,17 @@ public final class UnlockSkilltreeScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 2;</code>
      */
     private int retcode;
 
     /**
-     * <pre>
-     *  uint32 base_avatar_id = 6;
-     * </pre>
-     *
-     * <code>optional uint32 point_id = 5;</code>
+     * <code>optional uint32 point_id = 9;</code>
      */
     private int pointId;
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 14;</code>
      */
     private int level;
 
@@ -48,7 +44,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -56,7 +52,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return this
      */
     public UnlockSkilltreeScRsp clearRetcode() {
@@ -66,7 +62,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -74,7 +70,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 1;</code>
+     * <code>optional uint32 retcode = 2;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -85,11 +81,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 base_avatar_id = 6;
-     * </pre>
-     *
-     * <code>optional uint32 point_id = 5;</code>
+     * <code>optional uint32 point_id = 9;</code>
      * @return whether the pointId field is set
      */
     public boolean hasPointId() {
@@ -97,11 +89,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 base_avatar_id = 6;
-     * </pre>
-     *
-     * <code>optional uint32 point_id = 5;</code>
+     * <code>optional uint32 point_id = 9;</code>
      * @return this
      */
     public UnlockSkilltreeScRsp clearPointId() {
@@ -111,11 +99,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 base_avatar_id = 6;
-     * </pre>
-     *
-     * <code>optional uint32 point_id = 5;</code>
+     * <code>optional uint32 point_id = 9;</code>
      * @return the pointId
      */
     public int getPointId() {
@@ -123,11 +107,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  uint32 base_avatar_id = 6;
-     * </pre>
-     *
-     * <code>optional uint32 point_id = 5;</code>
+     * <code>optional uint32 point_id = 9;</code>
      * @param value the pointId to set
      * @return this
      */
@@ -138,7 +118,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 14;</code>
      * @return whether the level field is set
      */
     public boolean hasLevel() {
@@ -146,7 +126,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 14;</code>
      * @return this
      */
     public UnlockSkilltreeScRsp clearLevel() {
@@ -156,7 +136,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 14;</code>
      * @return the level
      */
     public int getLevel() {
@@ -164,7 +144,7 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 level = 8;</code>
+     * <code>optional uint32 level = 14;</code>
      * @param value the level to set
      * @return this
      */
@@ -245,15 +225,15 @@ public final class UnlockSkilltreeScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 8);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(pointId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(level);
       }
     }
@@ -280,25 +260,25 @@ public final class UnlockSkilltreeScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 8: {
+          case 16: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
+            if (tag != 72) {
               break;
             }
           }
-          case 40: {
+          case 72: {
             // pointId
             pointId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 112) {
               break;
             }
           }
-          case 64: {
+          case 112: {
             // level
             level = input.readUInt32();
             bitField0_ |= 0x00000004;

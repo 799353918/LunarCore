@@ -19,7 +19,7 @@ public final class GetRogueScoreRewardInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 4;</code>
      */
     private int retcode;
 
@@ -39,7 +39,7 @@ public final class GetRogueScoreRewardInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +47,7 @@ public final class GetRogueScoreRewardInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return this
      */
     public GetRogueScoreRewardInfoScRsp clearRetcode() {
@@ -57,7 +57,7 @@ public final class GetRogueScoreRewardInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +65,7 @@ public final class GetRogueScoreRewardInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 8;</code>
+     * <code>optional uint32 retcode = 4;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -199,7 +199,7 @@ public final class GetRogueScoreRewardInfoScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -227,7 +227,7 @@ public final class GetRogueScoreRewardInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 32: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;

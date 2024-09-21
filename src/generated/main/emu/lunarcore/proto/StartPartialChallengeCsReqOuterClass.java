@@ -19,17 +19,17 @@ public final class StartPartialChallengeCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 challenge_id = 6;</code>
+     * <code>optional uint32 challenge_id = 10;</code>
      */
     private int challengeId;
 
     /**
-     * <code>optional uint32 buff_id = 15;</code>
+     * <code>optional uint32 buff_id = 12;</code>
      */
     private int buffId;
 
     /**
-     * <code>optional bool is_first_half = 12;</code>
+     * <code>optional bool is_first_half = 4;</code>
      */
     private boolean isFirstHalf;
 
@@ -44,7 +44,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 6;</code>
+     * <code>optional uint32 challenge_id = 10;</code>
      * @return whether the challengeId field is set
      */
     public boolean hasChallengeId() {
@@ -52,7 +52,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 6;</code>
+     * <code>optional uint32 challenge_id = 10;</code>
      * @return this
      */
     public StartPartialChallengeCsReq clearChallengeId() {
@@ -62,7 +62,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 6;</code>
+     * <code>optional uint32 challenge_id = 10;</code>
      * @return the challengeId
      */
     public int getChallengeId() {
@@ -70,7 +70,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 6;</code>
+     * <code>optional uint32 challenge_id = 10;</code>
      * @param value the challengeId to set
      * @return this
      */
@@ -81,7 +81,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 15;</code>
+     * <code>optional uint32 buff_id = 12;</code>
      * @return whether the buffId field is set
      */
     public boolean hasBuffId() {
@@ -89,7 +89,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 15;</code>
+     * <code>optional uint32 buff_id = 12;</code>
      * @return this
      */
     public StartPartialChallengeCsReq clearBuffId() {
@@ -99,7 +99,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 15;</code>
+     * <code>optional uint32 buff_id = 12;</code>
      * @return the buffId
      */
     public int getBuffId() {
@@ -107,7 +107,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 buff_id = 15;</code>
+     * <code>optional uint32 buff_id = 12;</code>
      * @param value the buffId to set
      * @return this
      */
@@ -118,7 +118,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_first_half = 12;</code>
+     * <code>optional bool is_first_half = 4;</code>
      * @return whether the isFirstHalf field is set
      */
     public boolean hasIsFirstHalf() {
@@ -126,7 +126,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_first_half = 12;</code>
+     * <code>optional bool is_first_half = 4;</code>
      * @return this
      */
     public StartPartialChallengeCsReq clearIsFirstHalf() {
@@ -136,7 +136,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_first_half = 12;</code>
+     * <code>optional bool is_first_half = 4;</code>
      * @return the isFirstHalf
      */
     public boolean getIsFirstHalf() {
@@ -144,7 +144,7 @@ public final class StartPartialChallengeCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool is_first_half = 12;</code>
+     * <code>optional bool is_first_half = 4;</code>
      * @param value the isFirstHalf to set
      * @return this
      */
@@ -225,15 +225,15 @@ public final class StartPartialChallengeCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(challengeId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(buffId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 32);
         output.writeBoolNoTag(isFirstHalf);
       }
     }
@@ -260,25 +260,25 @@ public final class StartPartialChallengeCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 80: {
             // challengeId
             challengeId = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 120) {
-              break;
-            }
-          }
-          case 120: {
-            // buffId
-            buffId = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 96) {
               break;
             }
           }
           case 96: {
+            // buffId
+            buffId = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 32) {
+              break;
+            }
+          }
+          case 32: {
             // isFirstHalf
             isFirstHalf = input.readBool();
             bitField0_ |= 0x00000004;
